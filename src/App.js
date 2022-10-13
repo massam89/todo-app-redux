@@ -26,11 +26,11 @@ const App = () => {
       dispatch(sendData(items))
     }
     
-  }, [items])
+  }, [items, changed, dispatch])
 
   useEffect(() => {
     dispatch(getData())
-  }, [])
+  }, [dispatch])
 
   return (
     <div className={styles.container}>
