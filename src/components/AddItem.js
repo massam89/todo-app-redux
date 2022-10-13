@@ -15,8 +15,10 @@ const AddItem = () => {
 
   const submitNewTodoHandler = (e) => {
     e.preventDefault()
-    dispatch(todoActions.addItem({id: new Date().getTime() , title: e.target.item.value}))
-    inputRef.current.value = ''
+    if(e.target.item.value.trim() !== ''){
+      dispatch(todoActions.addItem({id: new Date().getTime() , title: e.target.item.value}))
+      inputRef.current.value = ''
+    }
   }
 
   return (
@@ -31,8 +33,6 @@ const AddItem = () => {
           <button type='submit'>+</button>
         </form>
       }
-      
-
     </div>
   )
 }
