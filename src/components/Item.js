@@ -1,8 +1,12 @@
+import styles from '../css/Item.module.css'
 
-
-const Item = () => {
+const Item = (props) => {
+ 
   return (
-    <div>Item</div>
+    <li className={styles.item}>
+      <span>{props.item.title}</span>
+      <button>delete</button>
+    </li>
   )
 }
 

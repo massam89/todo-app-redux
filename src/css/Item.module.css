@@ -1,0 +1,29 @@
+.item {
+  list-style-type: none;
+  display: flex;
+  margin-top: 5px;
+}
+
+.item span {
+  display: inline-block;
+  width: 85%;
+  margin-right: 3px;
+  padding: 10px;
+  border: 1px solid var(--grey);
+  background-color: var(--grey);
+  border-radius: 4px;
+}
+
+.item input::placeholder {
+  font-size: 1.1rem;
+}
+
+.item button {
+  display: inline-block;
+  width: 15%;
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
