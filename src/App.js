@@ -1,8 +1,16 @@
+import styles from './css/App.module.css'
+import Header from './components/Header'
+import AddItems from './components/AddItem'
+import Items from './components/Items'
+import Footer from './components/Footer'
 
-function App() {
+const App = () => {
   return (
-    <div>
-      hello
+    <div className={styles.container}>
+      <Header />
+      <AddItems />
+      <Items />
+      <Footer />
     </div>
   );
 }

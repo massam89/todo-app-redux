@@ -2,10 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const uiSlice = createSlice({
   name: 'ui',
-  initialState: { showNewItem: false},
+  initialState: { showForm: false},
   reducers: {
-    changeShowNewItem(state){
-      state.showNewItem = !state.showNewItem
+    changeShowForm(state){
+      state.showForm = !state.showForm
     }
   }
 })

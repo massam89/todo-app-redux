@@ -1,0 +1,45 @@
+.addItem div {
+  text-align: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.addItem div span {
+  display: inline-block;
+  background-color: var(--red);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--white);
+}
+
+.addItem form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.addItem form input {
+  display: inline-block;
+  width: 85%;
+  margin-right: 3px;
+  padding: 10px;
+  border: 1px solid rgb(187, 186, 186);
+  border-radius: 4px;
+}
+
+.addItem form input::placeholder {
+  font-size: 1.1rem;
+}
+
+.addItem form button {
+  display: inline-block;
+  width: 15%;
+  background-color: var(--purple);
+  color: var(--white);
+  border: none;
+  font-size: 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}

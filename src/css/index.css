@@ -1,0 +1,26 @@
+:root {
+  --green: rgb(102, 229, 205);
+  --blue: rgb(75, 129, 231);
+  --white: white;
+  --grey: rgb(242,242,242);
+  --red: rgb(231,77,61);
+  --purple: rgb(142, 73,233);
+
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(var(--green), var(--blue));
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
