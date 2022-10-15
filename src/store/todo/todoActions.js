@@ -18,7 +18,7 @@ export const sendData = (data) => {
       .catch(() => {
         dispatch(
           uiActions.changeNotification(
-            "something wrong to sync data with backend!"
+            "something wrong to sync data with backend! Turn on VPN"
           )
         );
       });
@@ -43,7 +43,7 @@ export const getData = () => {
       .catch((error) => {
         dispatch(
           uiActions.changeNotification(
-            "something wrong to get data from backend!"
+            "something wrong to get data from backend! Turn on VPN"
           )
         );
       });
